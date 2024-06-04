@@ -5,7 +5,7 @@ const app = express()
 require("./db/conn")
 const Customer = require("./models/custom")
 const hbs = require('hbs')
-const port = process.env.PORT || 8000
+const port = process.env.PORT
 const bcrypt = require('bcryptjs')
 
 const staticPath = path.join(__dirname, "../public")
